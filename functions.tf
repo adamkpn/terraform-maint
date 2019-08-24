@@ -2,7 +2,7 @@
 
 #----stop instances function----
 resource "aws_lambda_function" "stop_instances" {
-  role             = "${aws_iam_role.lambda_exec_role.arn}"
+  role             = "${aws_iam_role.tf_lambda_exec_role.arn}"
   handler          = "${var.handler}"
   runtime          = "${var.runtime}"
   filename         = "stop_instances.zip"
@@ -12,7 +12,7 @@ resource "aws_lambda_function" "stop_instances" {
 
 #----start instances function----
 resource "aws_lambda_function" "start_instances" {
-  role             = "${aws_iam_role.lambda_exec_role.arn}"
+  role             = "${aws_iam_role.tf_lambda_exec_role.arn}"
   handler          = "${var.handler}"
   runtime          = "${var.runtime}"
   filename         = "start_instances.zip"

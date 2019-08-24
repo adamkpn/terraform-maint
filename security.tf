@@ -1,9 +1,9 @@
 #----root/security.tf-----
 #----create iam policy-----
-resource "aws_iam_role" "lambda_exec_role" {
-  name        = "lambda_exec"
+resource "aws_iam_role" "tf_lambda_exec_role" {
+  name        = "tf_lambda_exec"
   path        = "/"
-  description = "Allows Lambda Function to call AWS services on your behalf."
+  description = "Allows Lambda Function to call AWS services..."
 
   assume_role_policy = <<EOF
 {
