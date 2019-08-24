@@ -19,9 +19,9 @@ start_instances.py
 ```
 - After defining the instances details in a "instances" list ```instances = ['i-00cf4e0582622951d', 'i-0533ab77f2916e724','i-0533ab77f2916e724']```
   Convert the Python files into the Zip, by running the following commands:
-  ``` zip start_instances start_instances.py
-      zip stop_instances stop_instances.py
-  ```
+  ```zip start_instances start_instances.py```
+  ```zip stop_instances stop_instances.py```
+  
   
 Now, from the root folder, run:
 ```
